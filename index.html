@@ -1,8 +1,7 @@
 <html lang="ru" class="add-scroll">
   <head>
     <base href="./index.html" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./form/bundle.css" />
+
     <script>
       var date = new Date();
       date.setTime(date.getTime() + 5 * 24 * 60 * 60 * 1000);
@@ -144,6 +143,7 @@
       href="https://usahomerelief.net/adict/intlTelInput.css" />
     <link rel="stylesheet" href="https://usahomerelief.net/adict/adict.css" />
     <link href="css/css2" rel="stylesheet" />
+    <link rel="stylesheet" href="./form/bundle.css" />
     <!-- <link rel="stylesheet" href="inputStyle.css"> -->
     <style>
       .register-form__button {
@@ -156,6 +156,7 @@
     </style>
     <link rel="stylesheet" href="css/preloader.css" />
     <link rel="stylesheet" href="css/leadform.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
 
   <body class="add-scroll">
@@ -215,10 +216,74 @@
             <div id="order" class="boxit">
               <div class="frame-container" style="padding: 20px 30px">
                 <div class="row-form">
-                  <div id="form-register-lead"></div>
+                  <form
+                    class="register-form form-send"
+                    method="POST"
+                    action="thanks/index.php"
+                    style="display: none">
+                    <div class="form_group--name">
+                      <input
+                        id="questionAnswer"
+                        type="hidden"
+                        name="questionAnswer"
+                        value="" />
+                      <!--Components-->
+
+                      <input
+                        type="hidden"
+                        name="phone2"
+                        class="phone2"
+                        autocomplete="off"
+                        required />
+                      <input type="hidden" name="pixel_id" value="" />
+                      <input type="hidden" name="page_lang" value="" />
+                      <input type="hidden" name="query" value="" />
+                      <input type="hidden" name="gp_id" value="" />
+                      <input type="hidden" name="hs_id" value="" />
+                      <input type="hidden" name="ip" id="ip" />
+                      <input type="hidden" name="landing" value="Tesla XBOT" />
+                      <input
+                        type="hidden"
+                        name="description"
+                        value="Tesla XBOT" />
+                      <div style="display: none" class="register-form__input">
+                        <input
+                          name="answer1"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                        <input
+                          name="answer2"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                        <input
+                          name="answer3"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                        <input
+                          name="answer4"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                        <input
+                          name="answer5"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                        <input
+                          name="answer6"
+                          type="text"
+                          class="answers-item"
+                          value="" />
+                      </div>
+                    </div>
+                  </form>
                   <div class="register-form">
                     <div class="form_group--name">
-                      <div class="leadFormContainer2 first"></div>
+                      <div id="form-register-lead"></div>
+                      <!-- <div class="leadFormContainer2 first"></div> -->
                     </div>
                   </div>
                 </div>
