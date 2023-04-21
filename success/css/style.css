@@ -1,0 +1,95 @@
+body, html {
+	height: 100%;
+	margin: 0;
+
+	background-color: #131133;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-image: url(https://anpsthemes.com/procoin/demo-3/wp-content/uploads/2018/05/bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+
+.text {
+	background: #ffffff;
+	border-radius: .5rem;
+	color: #333333;
+	padding: 1rem;
+}
+
+.wrapper {
+	background: rgb(28 23 63 / 35%);
+	padding: 1.5rem 1rem;
+	border-radius: .5rem;
+}
+
+.z-index-1 {
+	z-index: 1;
+}
+
+.z-index-2 {
+	z-index: 2;
+}
+
+.img-thumbnail {
+	background: #2b1d44;
+	border: none;
+}
+
+.wrapper span {
+	display: block;
+	height: 1px;
+	margin: 1.5rem auto;
+	background: #302e46;
+}
+
+.wrapper .h5 {
+	line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+	.manager {
+		font-size: 1.25rem;
+	}
+
+	.wrapper span {
+		width: 85%;
+	}
+}
+
+@media (max-width: 767px) {
+	.text {
+		padding: 4rem 1rem 2rem;
+	}
+
+	.z-index-1 {
+		margin-top: -3rem;
+	}
+
+	.img-thumbnail {
+		background: #201943;
+		border: none;
+	}
+
+	.manager {
+		font-size: calc(1.3rem + .6vw);
+	}
+
+	.wrapper span {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 720px;
+	}
+}

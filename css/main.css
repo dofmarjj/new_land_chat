@@ -1448,22 +1448,8 @@ input[placeholder="Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ"] {
     border-radius: 5px 0 0 5px !important;
 }
 
-.form-control {
-    background: rgba(255, 255, 255, 0.21);
-    border-radius: 5px;
-    height: 53px;
-    width: 100%;
-    display: block;
-    font-size: 20px;
-    letter-spacing: -0.05em;
-    color: #FFFFFF;
-    border: none;
-}
 
-.form-control:focus {
-    background: rgba(255, 255, 255, 0.21);
-    color: #FFFFFF;
-}
+
 
 .commonInputDiv {
     margin-bottom: 15px;
